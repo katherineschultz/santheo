@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* GENERAL */
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -53,20 +54,8 @@ table {
   border-spacing: 0;
 }
 
-.icons24-sprite, .icons24-leaf, .icons24-pencil-ruler, .icons24-question, h2:before {
+.icons24-sprite, .family h2:before, .tsl h2:before, .puzzling h2:before {
   background: url('/icons24-s3825a9b3c4.png') no-repeat;
-}
-
-.icons24-leaf {
-  background-position: 0 -24px;
-}
-
-.icons24-pencil-ruler {
-  background-position: 0 0;
-}
-
-.icons24-question {
-  background-position: 0 -48px;
 }
 
 body {
@@ -139,9 +128,38 @@ h2 {
   font-weight: bold;
   /*letter-spacing: -1px;*/
   margin-bottom: .8em;
+  position: relative;
+  margin-left: 28px;
 }
-h2:before {
+
+.family h2:before {
   background-position: 0 -24px;
+  content: "";
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: -28px;
+  top: 0px;
+}
+
+.tsl h2:before {
+  background-position: 0 0;
+  content: "";
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: -28px;
+  top: 0px;
+}
+
+.puzzling h2:before {
+  background-position: 0 -48px;
+  content: "";
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: -28px;
+  top: 0px;
 }
 
 .readmore {

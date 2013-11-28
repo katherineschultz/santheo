@@ -5,7 +5,7 @@
 
 @import "icons24/*.png";
 
-@include all-icons24-sprites;
+//@include all-icons24-sprites;
 
 @mixin rounded-corners($corner) {
     -webkit-border-radius: $corner;
@@ -97,10 +97,40 @@ h2 {
     font-weight: bold;
     /*letter-spacing: -1px;*/
     margin-bottom: .8em;
+    position: relative;
+    margin-left: 28px;
+}
 
-    &:before {
+//sprites//
+
+.family h2:before {
     @include icons24-sprite(leaf);
-    }
+    content: "";
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: -28px;
+    top: 0px;
+}
+
+.tsl h2:before {
+    @include icons24-sprite(pencil-ruler);
+    content: "";
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: -28px;
+    top: 0px;
+}
+
+.puzzling h2:before {
+    @include icons24-sprite(question);
+    content: "";
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: -28px;
+    top: 0px;
 }
 
 .readmore {
